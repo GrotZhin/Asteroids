@@ -6,6 +6,8 @@ public class Asteroid : MonoBehaviour
 {
     Vector3 rotate;
     Vector3 direction;
+    public GameObject boom;
+
     void Start()
     {
         rotate = new Vector3(Random.Range(-80, 80),Random.Range(-80, 80),Random.Range(-80, 80));
@@ -20,8 +22,11 @@ public class Asteroid : MonoBehaviour
     }
     void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.CompareTag("shoot"));
+        if(other.gameObject.CompareTag("shoot")){
         Destroy(other.gameObject);
         Destroy(this.gameObject);
+        pointcontrol.points++;
+        Instantiate(boom,transform.position,Quaternion.identity);
+        }
     }
 }
