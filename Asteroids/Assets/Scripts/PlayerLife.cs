@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class PlayerLife : MonoBehaviour
         if (life <= 0)
         {
             Die();
-
+             SceneManager.LoadScene("lose");
 
         }
 

@@ -8,6 +8,9 @@ public class points : MonoBehaviour
 {
       public TextMeshProUGUI textpoint; 
       public static int score;
+
+
+      int hscore;
       
       
     void Start()
@@ -20,4 +23,6 @@ public class points : MonoBehaviour
     {
          textpoint.text= "" + score;
     }
-}
+ 
+    }
+
