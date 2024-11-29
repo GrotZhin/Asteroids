@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 1, z: 0}
   speed: 20
+  damage: 20
 --- !u!136 &4126331483766501325
 CapsuleCollider:
   m_ObjectHideFlags: 0

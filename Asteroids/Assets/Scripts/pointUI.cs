@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class points : MonoBehaviour
 {
-      public TextMeshProUGUI textpoint;
+      public TextMeshProUGUI textpoint; 
+      public static int score;
+      
+      
     void Start()
     {
         
@@ -15,6 +18,6 @@ public class points : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         this.textpoint.text = pointcontrol.Points.ToString();
+         textpoint.text= "" + score;
     }
 }

@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour
 {
     public Vector3 velocity;
     public float speed;
+    public static int damage = 20;
     void Start()
     {
         Destroy(this.gameObject, 2.0f);

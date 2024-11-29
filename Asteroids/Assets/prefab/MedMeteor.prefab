@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -7744760949940452177}
   - component: {fileID: 1113302781180504625}
   - component: {fileID: 3580734319245616132}
+  - component: {fileID: 2625158638952425267}
   m_Layer: 0
   m_Name: MedMeteor
   m_TagString: Untagged
@@ -48,6 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boom: {fileID: 7220968067611548161, guid: e183cbb56ae0dfe43b4701318d387f8b, type: 3}
+  rest: {fileID: 1437193028514654679, guid: af630557cab468546a58f1d7ee8bbe3b, type: 3}
+  life: 40
+  value: 3
 --- !u!135 &1113302781180504625
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -96,6 +100,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2625158638952425267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5388578940661256968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccb067f091291a459f7c1cd347787ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: []
+  dropChance: 45
 --- !u!1001 &4010717354411080772
 PrefabInstance:
   m_ObjectHideFlags: 0

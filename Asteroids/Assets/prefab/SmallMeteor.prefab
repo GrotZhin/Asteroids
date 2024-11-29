@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1816069041344110983}
   - component: {fileID: 3691742952494034990}
   - component: {fileID: 5648743016951205849}
+  - component: {fileID: 2719875464631498778}
   m_Layer: 0
   m_Name: SmallMeteor
   m_TagString: Untagged
@@ -48,6 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boom: {fileID: 7220968067611548161, guid: e183cbb56ae0dfe43b4701318d387f8b, type: 3}
+  rest: {fileID: 0}
+  life: 20
+  value: 1
 --- !u!54 &3691742952494034990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96,6 +100,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.42003942
   m_Center: {x: 0.021234512, y: -0.058726043, z: 0}
+--- !u!114 &2719875464631498778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437193028514654679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccb067f091291a459f7c1cd347787ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: []
+  dropChance: 25
 --- !u!1001 &2705038256249385172
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,15 @@ using UnityEngine;
 
 public class Utility : MonoBehaviour
 {
+
+void Update()
+{
+if (points.score >30)
+{
+    
+}
+}
+
 public static Vector3 Position(Vector3 pos){
 if (pos.x >= 11)
         {

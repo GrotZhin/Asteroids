@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -8448915125561446532}
   - component: {fileID: 418346720054213706}
   - component: {fileID: 1377335323002163229}
+  - component: {fileID: -6094460890657294391}
   m_Layer: 0
   m_Name: BigMeteor
   m_TagString: Untagged
@@ -48,6 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boom: {fileID: 7220968067611548161, guid: e183cbb56ae0dfe43b4701318d387f8b, type: 3}
+  rest: {fileID: 5388578940661256968, guid: c8136be16fab4ed4b91ac4cb5f991437, type: 3}
+  life: 60
+  value: 5
 --- !u!54 &418346720054213706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96,6 +100,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.3457804
   m_Center: {x: 0.08085667, y: -0.15929614, z: -0.12222004}
+--- !u!114 &-6094460890657294391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620724278176813335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccb067f091291a459f7c1cd347787ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: []
+  dropChance: 70
 --- !u!1001 &3293912655910603396
 PrefabInstance:
   m_ObjectHideFlags: 0
