@@ -8,6 +8,7 @@ public class Start_button : MonoBehaviour
     public void Start()
     {
         SceneManager.LoadScene("level");
+        points.score = 0;
     }
       public void Menu()
     {

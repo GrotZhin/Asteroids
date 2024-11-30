@@ -12,6 +12,8 @@ public class PlayerLife : MonoBehaviour
     
     public int damage = 20;
     public TextMeshProUGUI textLife;
+
+    public  points PointManegement;
     void Start()
     {
         
@@ -30,6 +32,7 @@ public class PlayerLife : MonoBehaviour
         {
             Die();
              SceneManager.LoadScene("lose");
+             PointManegement.Highscore();
 
         }
 
